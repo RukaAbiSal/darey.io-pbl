@@ -47,6 +47,8 @@ sudo apt-get install jenkins
 ![j19](https://user-images.githubusercontent.com/50557587/143797190-0f582ff8-6062-4ffa-b021-59dc7ab3573a.PNG)
 
 - Go ahead and make some change in any file in your GitHub repository (e.g. README.MD file) and push the changes to the master branch. We can see that a new build has been launched automatically (by webhook) and you can see its results - artifacts, saved on Jenkins server. 
+<img width="420" alt="Build2" src="https://user-images.githubusercontent.com/104162178/172594131-6e0cde6e-60d8-48c4-ae89-0c304bb1ace0.PNG">
+
 - By default, the artifacts are stored on Jenkins server locally `/var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/`.
 
 ## Configure Jenkins to copy files to NFS server via SSH
@@ -55,18 +57,15 @@ sudo apt-get install jenkins
 ![j20](https://user-images.githubusercontent.com/50557587/143797871-63312a5e-aabd-41b4-b9b2-81a3348073d1.PNG)
 
 - Configure the job/project to copy artifacts over to NFS server. On main dashboard select “Manage Jenkins” and choose “Configure System” menu item.
-- Scroll down to Publish over SSH plugin configuration section and configure it to be able to connect to your NFS server.  
-![j21](https://user-images.githubusercontent.com/50557587/143798455-d84c2755-d2f1-4b0c-9b0b-db7f06096d5f.PNG)
+- Scroll down to Publish over SSH plugin configuration section and configure it to be able to connect to your NFS server. 
+<img width="667" alt="Configuresystem" src="https://user-images.githubusercontent.com/104162178/172592653-9ae16338-e39d-4911-bbd7-00bb1aace800.PNG">
 
 - Save the configuration, open your Jenkins job/project configuration page and add another one “Post-build Action”.   
 ![j22](https://user-images.githubusercontent.com/50557587/143798513-cdb6e841-ee2b-4db2-8292-059beb78200d.PNG)
 
-- Configure it to send all files produced by the build into our previouslys define remote directory. In our case we want to copy all files and directories - so we use "**".
-- If you want to apply some particular pattern to define which files to send - use this syntax.   
+- Configure it to send all files produced by the build into our previouslys define remote directory. In our case we want to copy all files and directories - so we use "**".  
 ![j23](https://user-images.githubusercontent.com/50557587/143798579-fc3fe6bf-c2d8-41e5-834f-e0eda940d209.PNG)
 
-- Make changes in the README.MD file in the git account and confirm if it will sync along with jenkins and show in the NFS server.    
-![git2](https://user-images.githubusercontent.com/50557587/143798923-4b973e98-ec44-47e8-92ad-648368ae2354.PNG) 
+Save this configuration and go ahead, change something in README.MD file in your GitHub Tooling repository. Webhook will trigger a new job and in the "Console Output" of the job you will find something like this
+<img width="744" alt="success" src="https://user-images.githubusercontent.com/104162178/172595365-e48925b5-7f44-445d-8cb4-fd586e7e1bce.PNG">
 
-- Below is the output from the NFS server, checking the README.MD file  
-![git1](https://user-images.githubusercontent.com/50557587/143799067-4a62660d-c818-49c9-a1f3-df0f98ab7741.PNG)
