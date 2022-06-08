@@ -15,6 +15,7 @@ sudo apt update
 sudo apt-get install jenkins
 ```
 - Confirm Jenkins is up and running `sudo systemctl status jenkins`.
+- <img width="859" alt="Jenkins running" src="https://user-images.githubusercontent.com/104162178/172587927-2f1cc1f8-4736-4a83-8c6c-44b971151c15.PNG">
 - 
 - Create a new inbound rule in the EC2 Security Group to TCP port 8080    
 ![2](https://user-images.githubusercontent.com/50557587/142726600-0ad35ae6-802a-4cb9-87a7-fa4fd1d97f28.PNG)
