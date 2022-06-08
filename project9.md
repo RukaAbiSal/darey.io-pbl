@@ -26,18 +26,17 @@ sudo apt-get install jenkins
 ![j1](https://user-images.githubusercontent.com/50557587/143429676-a174a6bf-ae5f-4df0-a614-2b7332bcbbb0.PNG)
 
 - Enable webhooks in your Github repository.     
-![j14](https://user-images.githubusercontent.com/50557587/143795431-be13add2-58c8-473f-b6c8-297b82d375a9.PNG)
+<img width="813" alt="Webhook" src="https://user-images.githubusercontent.com/104162178/172590680-b7c8e36f-eca1-458b-a250-c9003ac8a237.PNG">
 
 -  Go to Jenkins web console, click “New Item” and create a “Freestyle project”.
 -  To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself.
 -  In configuration of your Jenkins freestyle project choose Git repository, provide there the link to your Tooling GitHub repository and credentials (user/password) so Jenkins could access files in the repository and click save.  
-![j15](https://user-images.githubusercontent.com/50557587/143795766-a3c4049b-40ab-42e4-99ab-d650003861e0.PNG)
 
 - Run the build. For now we can only do it manually. Click “Build Now” button, if you have configured everything correctly, the build will be successfull and you will see it under the first build:   
-![j16](https://user-images.githubusercontent.com/50557587/143796814-b8227c3b-9682-4292-ae73-2071c52cf892.PNG)
+<img width="475" alt="Build1" src="https://user-images.githubusercontent.com/104162178/172591334-5c49a525-0f02-4665-bea6-040a4fa55f3c.PNG">
 
 - We can open the build and check in “Console Output” if it has run successfully. As shown below, the build ran successfully:   
-![j17](https://user-images.githubusercontent.com/50557587/143796907-b7337ded-498e-4886-ab50-b7a86892c40b.PNG)
+<img width="533" alt="Buildsuccess" src="https://user-images.githubusercontent.com/104162178/172591680-63b90566-0d88-40a7-9c04-6ce35b9e4958.PNG">
 
 - But this build does not produce anything and it runs only when we trigger it manually and we would make some adjustments to fix this.
 - Click “Configure” your job/project and add two configurations. 
