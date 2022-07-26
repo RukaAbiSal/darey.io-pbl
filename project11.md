@@ -11,6 +11,7 @@
 - Configure Webhook in Github and set webhook to trigger ansible build. 
 
 - Test the setup by making some change in README>MD file in main branch and make sure the build starts automatically and Jenkins saves the file.       
+<img width="269" alt="Jenkins" src="https://user-images.githubusercontent.com/104162178/181065608-dae69ed6-9ec7-4d1d-b111-83963175762d.PNG">
 
 
 - Install Ansible `sudo apt update`, `sudo apt install ansible` in the instance.
