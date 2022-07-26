@@ -7,10 +7,8 @@
 - In our Github account create a new repository named ansible-config.
 - Configure Jenkins build job to save the repository content everytime a change occurs.
 - Create a new freestyle project "ansible" in Jenkins and point it to the "ansible-config" repository.  
-![git3](https://user-images.githubusercontent.com/50557587/145273956-56ef5679-e0e4-4288-bd1e-c62ae13a1b0b.PNG)
 
 - Configure Webhook in Github and set webhook to trigger ansible build. 
-![git7](https://user-images.githubusercontent.com/50557587/145275018-32bc3a85-c340-4343-afec-d3e12e2801c4.PNG)
 
 - Test the setup by making some change in README>MD file in main branch and make sure the build starts automatically and Jenkins saves the file.       
 ![git5](https://user-images.githubusercontent.com/50557587/145275357-904fed3c-64af-424c-96a2-d489b76894d3.PNG)
@@ -57,15 +55,7 @@
 
 ## Update GIT with the latest code.
 - All the configurations we did are all on our local machine, so we need to push all this changes to Github.  
-![pj11](https://user-images.githubusercontent.com/50557587/145288634-9ec726df-e744-44b7-8b75-2686fe413c61.PNG)   
-![pj12](https://user-images.githubusercontent.com/50557587/145288696-d88c967a-b7c0-4627-bd0e-2d3c0d548080.PNG)  
-![p13](https://user-images.githubusercontent.com/50557587/145288960-c1711635-ec1c-40fa-8396-4cb119b6e516.PNG)   
-![p14](https://user-images.githubusercontent.com/50557587/145289057-fa0a9e72-b1b7-44b4-af83-6d077274d5ac.PNG)
-![p15](https://user-images.githubusercontent.com/50557587/145289064-efeb400f-b618-446f-9e8f-fd9e32c70a84.PNG) 
-![pj16](https://user-images.githubusercontent.com/50557587/145289339-d6071245-8fed-40bb-b7b6-4e46a0ada22f.PNG)
 
-- The push we did are all on on our branch, hence we need to sync the files with the main branch. 
-![pj17](https://user-images.githubusercontent.com/50557587/145289519-bd3c42da-624d-470a-8bb7-99f06647ca27.PNG) 
-![pj18](https://user-images.githubusercontent.com/50557587/145289532-49da6999-98ed-4d86-81d1-4ac9eb2d036f.PNG)
+
 
 
