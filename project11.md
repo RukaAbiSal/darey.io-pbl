@@ -55,6 +55,7 @@
 
 ## Update GIT with the latest code.
 - All the configurations we did are all on our local machine, so we need to push all this changes to Github.  
+<img width="659" alt="Mergedwell" src="https://user-images.githubusercontent.com/104162178/181064871-88c19bd4-2e4e-4038-a23c-3dd85bcb3d50.PNG">
 
 
 
