@@ -104,10 +104,6 @@ Copy the content below in the Jenkinsfile and push the code. Jenkins scan each b
 ![2 4](https://user-images.githubusercontent.com/50557587/149623527-5a324c67-8ff1-4895-acdf-e3ef235f864d.PNG)
 ![2 5](https://user-images.githubusercontent.com/50557587/149623528-e617eca2-c86f-45a0-8236-ce4a91a97582.PNG)
 
-When we merge the code with the main branch, the workspace for the main and feature branch will be deleted as specified in the Jenkinfile.  
-![2 6](https://user-images.githubusercontent.com/50557587/149623538-5f85d47e-6ae6-4aaf-9da1-6704721dc8ad.PNG)
-![2 7](https://user-images.githubusercontent.com/50557587/149623541-886b94e6-3599-4fbc-88fe-dd86236f786f.PNG)
-
 ## Running Ansible Playbook fronm Jenkins
 Install ansible in Jenkins `sudo apt install ansible` and ansible plugin in Jenkins UI.
 We need to install some dependencies for ansible to work properly, since we have some ansible modules in the roles. This will allow ansible playbook to run properly.
